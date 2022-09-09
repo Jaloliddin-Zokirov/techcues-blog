@@ -1,0 +1,121 @@
+.hero{
+  position: relative;
+  margin-top: 128px;
+  padding: 128px 0;
+  &::before{
+    position: absolute;
+    top: 80px;
+    left: calc(50% + 330px);
+    width: 404px;
+    height: 392px;
+    background-image: url("../images/hero-bgi-1.png");
+    background-repeat: no-repeat;
+    background-size: 404px 392px;
+    background-position: center;
+    z-index: -1;
+    content: "";
+  }
+  &::after{
+    position: absolute;
+    bottom: 57px;
+    right: calc(50% + 325px);
+    width: 404px;
+    height: 392px;
+    background-image: url("../images/hero-bgi-1.png");
+    background-repeat: no-repeat;
+    background-size: 404px 392px;
+    background-position: center;
+    z-index: -1;
+    content: "";
+  }
+}
+
+.hero__box{
+  position: relative;
+  height: 563px;
+}
+
+.hero__link{
+  position: absolute;
+  top: 0px;
+  display: flex;
+  width: 100%;
+  border: 1px solid #EBEAF2;
+  border-radius: 8px;
+  background-color: #fff;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  &:hover{
+    top: -10px;
+    box-shadow: 0px 24px 24px rgba(52, 52, 147, 0.32);
+  }
+}
+
+.hero__content{
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 66px;
+  padding-left: 49px;
+  background: #FFFFFF;
+}
+
+.hero__line{
+  display: inline-block;
+  width: 4px;
+  height: 432px;
+  margin-top: 65px;
+  background-color: #5C5CFF;  
+}
+
+.hero__desc{
+  display: inline-block;
+  margin-bottom: 33px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #5C5CFF;
+}
+
+.hero__title-box{
+  width: 100%;
+  max-width:  463px;
+}
+
+.hero__title{
+  margin: 0 0 29px;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 62px;
+  letter-spacing: 1px;
+  color: #413E52;
+}
+
+.hero__text{
+  display: inline-block;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #413E52;
+}
+
+.hero__time{
+  display: inline-block;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #868297;
+}
+
+.hero__img{
+  width: 609px;
+  height: 560px;
+  margin-left: auto;
+  border-radius: 0 8px 8px 0;
+}
